@@ -1,0 +1,109 @@
+
+$color-normal: #52c41a;
+$color-high: #f5222d;
+
+
+.todoForm{
+    
+    form{
+        // width: 100%;
+        input[type="text"]{
+            width: 100%;
+            border: 1px solid #096dd9;
+            height:35px;
+            color: #000000;
+        }
+
+        .buttonSubmit{
+            cursor: pointer;
+            width: 100%;
+            background-color: #096dd9;
+            height:35px;
+            color:#f0f0f0;
+            border: none;
+            outline: none;
+        }
+
+        .radioCheck{
+            font-size: 1rem;
+            margin-top: 10px;
+            color: $color-normal;
+            input{
+                outline:none;
+                
+                -webkit-appearance: none;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                outline: none;
+                box-shadow: 0 0 0 2px ;
+            }
+
+            input:checked {
+                background: $color-normal;
+            }
+
+            .highRadio{
+                color: $color-high;
+                input{
+                    box-shadow: 0 0 0 2px $color-high;
+                }
+                input:checked {
+                    background: $color-high;
+                }
+            }
+
+            
+            
+
+        }
+    }
+}
+
+
+.todoHigh{
+    color: $color-high;
+    
+}
+
+.todoNormal{
+    color: $color-normal;
+}
+
+
+.homePage{
+    
+    position: relative;
+    .messNoti{
+        padding: 10px;
+        color:red;
+    }
+    .todoRow{
+        position: absolute;
+        width: 100%;
+        top: 20vh;
+        padding:10px;
+    }
+    .headLists{
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #ffffff;
+        
+    }
+
+    .todoItem{
+        margin: 5px 0;
+        border-bottom: 1px dotted #dddddd;
+        background-color:rgba( #bfbfbf, .5);
+        padding:2vh;
+        .toolbar{
+            color:$color-high;
+            text-align: center;
+            .cursorIcon{
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
